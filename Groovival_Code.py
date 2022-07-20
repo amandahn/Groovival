@@ -16,21 +16,13 @@ import youtube_dl
 class music(commands.Cog):
     def __init__(self, client):
         self.client = client
-     
-    @commands.command()
-    async def info(self, ctx):
-        commands_list = ["REQUIREMENTS: user must be in a voice channel to use the following commands", "!join -> Groovival joins the channel",
-                        "!disconnect -> Groovival leaves the channel", "!play url -> Streams the given url into the server (MUST BE A YOUTUBE URL)"]
-        for i in range(len(commands_list)):
-            await ctx.send(commands_list[i] + "\n")
  
     @commands.command()
     async def join(self,ctx):
-
        await ctx.author.voice.channel.connect()
 
     @commands.command()
-    async def disconnect(self, ctx):
+    async def leave(self, ctx):
         await ctx.voice_client.disconnect()
 
     @commands.command()
@@ -44,7 +36,13 @@ class music(commands.Cog):
             url_ydl = info["formats"][0]["url"]
             source = await discord.FFmpegOpusAudio.from_probe(url_ydl, **FFMPEG_OPTIONS)
         vc.play(source)
-
+    
+    @commands.command()
+    async def info(self, ctx):
+        commands_list = ["REQUIREMENTS: user must be in a voice channel to use the following commands", "!join -> Groovival joins the channel",
+                        "!disconnect -> Groovival leaves the channel", "!play url -> Streams the given url into the server (MUST BE A YOUTUBE URL)"]
+        for i in range(len(commands_list)):
+            await ctx.send(commands_list[i] + "\n")
 
 def setup(client):
     client.add_cog(music(client))
