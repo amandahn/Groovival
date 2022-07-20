@@ -16,7 +16,14 @@ import youtube_dl
 class music(commands.Cog):
     def __init__(self, client):
         self.client = client
-    # Commands Precondition: Requires the user to be connected to a voice channel prior to use
+     
+    @commands.command()
+    async def info(self, ctx):
+        commands_list = ["REQUIREMENTS: user must be in a voice channel to use the following commands", "!join -> Groovival joins the channel",
+                        "!disconnect -> Groovival leaves the channel", "!play url -> Streams the given url into the server (MUST BE A YOUTUBE URL)"]
+        for i in range(len(commands_list)):
+            await ctx.send(commands_list[i] + "\n")
+ 
     @commands.command()
     async def join(self,ctx):
 
