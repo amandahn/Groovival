@@ -1,5 +1,5 @@
 # Groovival
-A Discord Music Bot which can stream music into, join, and leave a server. Utilizes discord.py, FFMpeg, and youtube-dl. Created for personal use.
+A Discord Music Bot which can stream music into, join, and leave a server. Utilizes discord.py, FFMpeg, and youtube-dl. Created for personal use, coded in Python.
 
 __Future Objectives__
 - Create commands to pause and resume music
