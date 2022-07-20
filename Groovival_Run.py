@@ -3,7 +3,8 @@ Groovival
 
 Author: Amanda Ngo
 Description: Responds to commands given in a discord server to play music
-Last Modified: June 22, 2022
+Created: June 20, 2022
+Last Modified: July 20, 2022
 Inspired and modified from: https://youtu.be/ml-5tXRmmFk
 """
 
