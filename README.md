@@ -7,7 +7,7 @@ __Current Features__
 - A commands help list that is printed into general 🦮
 
 __Future Objectives__
-- Create commands to pause and resume music⏯️
+- Create commands to pause and resume music ⏯️
 - Create a queue of music, and the ability to take music from a playlist and stream it into the bot 📝
 - Create a shuffle feature for the above queue of music ♾️
 - Create an auto-shuffle feature that can be enabled for whenever music is added 💌
