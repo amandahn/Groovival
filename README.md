@@ -3,8 +3,8 @@ A Discord Music Bot which can stream music into, join, and leave a server. Utili
 
 __Current Features__
 - Groovival can join and leave a user's voice channel 🎙️
-- Play a single song from a YouTube url 🎶
-- A commands help list that is printed into general 🦮
+- Stream a song from a YouTube url 🎶
+- A commands help list that is printed into a server message channel 🦮
 
 __Future Objectives__
 - Create commands to pause and resume music ⏯️
