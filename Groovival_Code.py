@@ -5,7 +5,6 @@ Author: Amanda Ngo
 Description: Responds to commands given in a discord server to play music
 Created: June 14, 2022
 Last Modified: July 20, 2022
-Addition URL: https://discord.com/oauth2/authorize?client_id=989267518944346192&scope=bot
 Inspired by: https://youtu.be/ml-5tXRmmFk and https://youtu.be/jHZlvRr9KxM
 
 """
