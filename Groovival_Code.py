@@ -17,9 +17,10 @@ import youtube_dl
 class music(commands.Cog):
     def __init__(self, client):
         self.client = client
-
+    # Commands Precondition: Requires the user to be connected to a voice channel prior to use
     @commands.command()
     async def join(self,ctx):
+
        await ctx.author.voice.channel.connect()
 
     @commands.command()
