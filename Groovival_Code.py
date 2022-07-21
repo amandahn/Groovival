@@ -39,10 +39,8 @@ class music(commands.Cog):
     
     @commands.command()
     async def info(self, ctx):
-        commands_list = ["REQUIREMENTS: user must be in a voice channel to use the following commands", "!join -> Groovival joins the channel",
-                        "!disconnect -> Groovival leaves the channel", "!play url -> Streams the given url into the server (MUST BE A YOUTUBE URL)"]
-        for i in range(len(commands_list)):
-            await ctx.send(commands_list[i] + "\n")
+        await ctx.send("REQUIREMENTS: user must be in a voice channel to use the following commands\n!join -> Groovival joins the channel\n\
+                        !disconnect -> Groovival leaves the channel\n!play url -> Streams the given url into the server (MUST BE A YOUTUBE URL)")
 
 def setup(client):
     client.add_cog(music(client))
