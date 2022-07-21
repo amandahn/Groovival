@@ -43,6 +43,21 @@ class music(commands.Cog):
                         **!disconnect** ➞ Groovival leaves the channel\n**!play** some url ➞ Streams the given url into the server (MUST BE A YOUTUBE URL)\n
                             if a given url does not work, try another link of the same song")
         # Backspace at **!disconnect** until \n for best print formatting
+    
+    @commands.command()
+    async def pause(self, ctx):
+        await ctx.voice_client.pause()
+        await ctx.send("Music paused")
+
+    @commands.command()
+    async def unpause(self, ctx):
+        await ctx.voice_client.resume()
+        await ctx.send("Music unpaused")
+        
+    @commands.command()
+    async def stop(self, ctx):
+        await ctx.voice_client.stop()
+        await ctx.send("Music stopped")
 
 def setup(client):
     client.add_cog(music(client))
