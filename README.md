@@ -5,7 +5,8 @@ __Current Features__
 - Groovival can join and leave a user's voice channel 🎙️
 - Stream a song from a YouTube url 🎶
 - A commands help list that is printed into a server message channel 🦮
-- Stop and resume a song that's being played ⏯️
+- Pause and resume a song that's being played ⏯️
+- Stop the song being played 🛑
 
 __Future Objectives__
 - A queue of music, and the ability to take music from a playlist and stream it into the bot 📝
