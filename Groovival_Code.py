@@ -49,7 +49,7 @@ class music(commands.Cog):
         await ctx.send("**REQUIREMENTS: user must be in a voice channel to use the following commands**\n**!join** ➞ Groovival joins the channel\n\
                         **!disconnect** ➞ Groovival leaves the channel\n**!play** some url ➞ Streams the given url into the server (MUST BE A YOUTUBE URL)\n\
                         **!pause** ➞ Pauses a given song, if not currently paused\n**!unpause** ➞ Unpauses a given song, if currently paused\n\
-                        **!stop** ➞ Stops a current playing song, if music is currently playing\n
+                        **!stop** ➞ Stops a current playing song, if music is currently playing\n")
 
     # Description: Bot pauses the current song being played
     # Precondition: Audio must be currently plaiyng
