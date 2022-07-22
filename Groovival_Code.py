@@ -65,7 +65,7 @@ class music(commands.Cog):
         await ctx.voice_client.resume()
         await ctx.send("Music unpaused")
     
-    # Description: Bot stop the current song
+    # Description: Bot stops the current song
     # Precondition: Audio must be currently plaiyng
     @commands.command()
     async def stop(self, ctx):
